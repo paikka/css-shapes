@@ -1,0 +1,21 @@
+html,
+body {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.one {
+  &__circle {
+    margin: 2%;
+    float: left;
+    width: 200px;
+    height: 200px;
+    clip-path: circle(); // clip-path takes many of the same values as shape-outside ...
+    shape-outside: circle();
+    background: linear-gradient(to top right, #FDB171, #FD987D);
+  }
+}
